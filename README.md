@@ -50,36 +50,39 @@ Counts reflect the current generated dataset. Counts may change if generation lo
 
 ```text
 LoanDecisionEngine/
-├── data/
-│   ├── master/
-│   ├── transactions/
-│   └── anomalies/
-├── docs/
-│   ├── data_dictionary.csv
-│   └── data_dictionary.json
-├── sql/
-│   └── schema.sql
-├── database/                  # Local database; excluded from Git
-├── generate_master_data.py
-├── validate_master_data.py
-├── generate_applications.py
-├── generate_affordability.py
-├── generate_decisions.py
-├── generate_repayment_schedules.py
-├── generate_event_history.py
-├── generate_documents.py
-├── generate_anomalies.py
-├── inject_anomalies.py
-├── validate_anomalies.py
-├── generate_data_dictionary.py
-├── generate_manifest.py
-├── load_sqlite.py
-├── check_database.py
-├── source_manifest.json
-├── checksums.sha256
-├── .gitignore
-└── README.md
+|-- data/
+|   |-- master/
+|   |-- transactions/
+|   `-- anomalies/
+|-- docs/
+|   |-- AI_PROMPT_HISTORY.md
+|   |-- DESIGN_AND_VALIDATION.md
+|   |-- data_dictionary.csv
+|   `-- data_dictionary.json
+|-- sql/
+|   `-- schema.sql
+|-- database/                  # Local database; excluded from Git
+|-- generate_master_data.py
+|-- validate_master_data.py
+|-- generate_applications.py
+|-- generate_affordability.py
+|-- generate_decisions.py
+|-- generate_repayment_schedules.py
+|-- generate_event_history.py
+|-- generate_documents.py
+|-- generate_anomalies.py
+|-- inject_anomalies.py
+|-- validate_anomalies.py
+|-- generate_data_dictionary.py
+|-- generate_manifest.py
+|-- load_sqlite.py
+|-- check_database.py
+|-- source_manifest.json
+|-- checksums.sha256
+|-- .gitignore
+`-- README.md
 ```
+
 
 ## Setup
 
@@ -174,11 +177,27 @@ Use `check_database.py` to inspect table names and record counts.
 
 ## Affordability and Decision Logic
 
-The affordability pipeline calculates proposed monthly repayments, total monthly debt, and debt-to-income ratio from synthetic income, existing debt, and proposed loan payments.
+The affordability pipeline calculates the proposed monthly loan payment, existing monthly debt, total monthly debt, and debt-to-income ratio (DTI) using synthetic income and credit data.
 
-The decision pipeline applies illustrative rules to produce outcomes such as approval, review, or rejection, together with reason codes.
+The decision pipeline applies the following illustrative rules:
 
-These rules are designed for engineering demonstration and **are not a validated lending policy or financial advice**.
+- **Approve:** Monthly income is positive and DTI is at or below 0.40.
+- **Review:** DTI is above 0.40 and at or below 0.50.
+- **Reject:** DTI is above 0.50.
+- **Review:** Income is non-positive, DTI is unavailable, or required affordability or product information is missing.
+
+Each decision includes an outcome and reason code to make the applied rule easier to understand.
+
+For the current generated dataset, the decision distribution is:
+
+| Outcome | Applications |
+|---|---:|
+| Approve | 4,266 |
+| Review | 924 |
+| Reject | 810 |
+| **Total** | **6,000** |
+
+These thresholds are example assumptions for synthetic-data testing. They have not been validated against real lending outcomes, and they are **not a production lending policy or financial advice**.
 
 ## Anomaly Testing
 
@@ -200,9 +219,9 @@ The generators use the fixed random seed `20261022` where configured, supporting
 
 The repository includes:
 
-- `source_manifest.json` — manifest of generated data files.
-- `checksums.sha256` — SHA-256 checksums for the files included by the manifest-generation script.
-- `docs/data_dictionary.csv` and `docs/data_dictionary.json` — descriptions of dataset fields.
+- `source_manifest.json` - manifest of generated data files.
+- `checksums.sha256` - SHA-256 checksums for the files included by the manifest-generation script.
+- `docs/data_dictionary.csv` and `docs/data_dictionary.json` - descriptions of dataset fields.
 
 Regenerate the manifest and checksums after changing generated datasets. Reproducibility also depends on keeping the generator code and configuration unchanged.
 

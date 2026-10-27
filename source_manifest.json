@@ -2,7 +2,7 @@
   "project": "Loan Decision Engine",
   "seed": 20261022,
   "python_version": "3.14.6",
-  "generated_at_utc": "2026-10-27T13:17:48.241560+00:00",
+  "generated_at_utc": "2026-10-27T14:43:00.879706+00:00",
   "files": [
     {
       "path": "data/master/applicants.csv",
@@ -42,8 +42,8 @@
     },
     {
       "path": "data/transactions/decisions.csv",
-      "size_bytes": 561880,
-      "sha256": "1569478d54775689ccbf5e14c44c1326d88df4203069abc28646215b9cad8c60",
+      "size_bytes": 563980,
+      "sha256": "57dd86cf99db350840adb9cfe98732f1aa787a917f1a05686fd4670d1ec767fa",
       "data_rows": 6000
     },
     {

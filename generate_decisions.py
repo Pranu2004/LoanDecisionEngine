@@ -60,19 +60,18 @@ def generate_decisions():
             if dti is None:
                 reasons.append("DTI_UNAVAILABLE")
 
-            if (
-                income > 0
-                and dti is not None
-                and dti <= MAX_DTI
-            ):
-                outcome = "approve"
-                reasons.append("DTI_WITHIN_EXAMPLE_THRESHOLD")
-            elif dti is not None and dti > REVIEW_DTI:
-                outcome = "review"
-                reasons.append("DTI_ABOVE_REVIEW_THRESHOLD")
-            else:
+            if income <= 0 or dti is None:
                 outcome = "review"
                 reasons.append("MANUAL_REVIEW_REQUIRED")
+            elif dti <= MAX_DTI:
+                outcome = "approve"
+                reasons.append("DTI_WITHIN_EXAMPLE_THRESHOLD")
+            elif dti <= REVIEW_DTI:
+                outcome = "review"
+                reasons.append("DTI_ABOVE_APPROVAL_THRESHOLD")
+            else:
+                outcome = "reject"
+                reasons.append("DTI_ABOVE_REVIEW_THRESHOLD")
 
         decisions.append({
             "decision_id": f"DEC-{loan_id}",

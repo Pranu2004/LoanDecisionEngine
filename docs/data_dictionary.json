@@ -264,6 +264,36 @@
     "description": "Description to be reviewed."
   },
   {
+    "dataset": "transactions/documents.csv",
+    "column_name": "document_id",
+    "data_type": "string",
+    "description": "Description to be reviewed."
+  },
+  {
+    "dataset": "transactions/documents.csv",
+    "column_name": "loan_id",
+    "data_type": "string",
+    "description": "Unique identifier for a loan application."
+  },
+  {
+    "dataset": "transactions/documents.csv",
+    "column_name": "document_type",
+    "data_type": "string",
+    "description": "Description to be reviewed."
+  },
+  {
+    "dataset": "transactions/documents.csv",
+    "column_name": "document_status",
+    "data_type": "string",
+    "description": "Description to be reviewed."
+  },
+  {
+    "dataset": "transactions/documents.csv",
+    "column_name": "submitted_at",
+    "data_type": "string",
+    "description": "Description to be reviewed."
+  },
+  {
     "dataset": "transactions/event_history.csv",
     "column_name": "event_id",
     "data_type": "string",

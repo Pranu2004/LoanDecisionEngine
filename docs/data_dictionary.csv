@@ -43,6 +43,11 @@ transactions/decisions.csv,decision_outcome,string,Recorded outcome of the decis
 transactions/decisions.csv,decision_reason_codes,string,Description to be reviewed.
 transactions/decisions.csv,decision_rule_version,string,Description to be reviewed.
 transactions/decisions.csv,decision_date,string,Description to be reviewed.
+transactions/documents.csv,document_id,string,Description to be reviewed.
+transactions/documents.csv,loan_id,string,Unique identifier for a loan application.
+transactions/documents.csv,document_type,string,Description to be reviewed.
+transactions/documents.csv,document_status,string,Description to be reviewed.
+transactions/documents.csv,submitted_at,string,Description to be reviewed.
 transactions/event_history.csv,event_id,string,Unique identifier for an application event.
 transactions/event_history.csv,loan_id,string,Unique identifier for a loan application.
 transactions/event_history.csv,event_type,string,Type of event recorded in the workflow.
