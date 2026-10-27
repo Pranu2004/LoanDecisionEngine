@@ -1,0 +1,596 @@
+[
+  {
+    "dataset": "master/applicants.csv",
+    "column_name": "applicant_id",
+    "data_type": "string",
+    "description": "Unique identifier for an applicant."
+  },
+  {
+    "dataset": "master/applicants.csv",
+    "column_name": "age",
+    "data_type": "string",
+    "description": "Description to be reviewed."
+  },
+  {
+    "dataset": "master/applicants.csv",
+    "column_name": "residence_years",
+    "data_type": "string",
+    "description": "Description to be reviewed."
+  },
+  {
+    "dataset": "master/applicants.csv",
+    "column_name": "created_date",
+    "data_type": "string",
+    "description": "Description to be reviewed."
+  },
+  {
+    "dataset": "master/credit_facilities.csv",
+    "column_name": "credit_facility_id",
+    "data_type": "string",
+    "description": "Unique identifier for an existing credit facility."
+  },
+  {
+    "dataset": "master/credit_facilities.csv",
+    "column_name": "applicant_id",
+    "data_type": "string",
+    "description": "Unique identifier for an applicant."
+  },
+  {
+    "dataset": "master/credit_facilities.csv",
+    "column_name": "outstanding_balance",
+    "data_type": "string",
+    "description": "Description to be reviewed."
+  },
+  {
+    "dataset": "master/credit_facilities.csv",
+    "column_name": "monthly_payment",
+    "data_type": "string",
+    "description": "Monthly payment on an existing credit facility."
+  },
+  {
+    "dataset": "master/credit_facilities.csv",
+    "column_name": "status",
+    "data_type": "string",
+    "description": "Description to be reviewed."
+  },
+  {
+    "dataset": "master/credit_facilities.csv",
+    "column_name": "effective_from",
+    "data_type": "string",
+    "description": "Description to be reviewed."
+  },
+  {
+    "dataset": "master/employment.csv",
+    "column_name": "employment_id",
+    "data_type": "string",
+    "description": "Unique identifier for an employment record."
+  },
+  {
+    "dataset": "master/employment.csv",
+    "column_name": "applicant_id",
+    "data_type": "string",
+    "description": "Unique identifier for an applicant."
+  },
+  {
+    "dataset": "master/employment.csv",
+    "column_name": "employment_status",
+    "data_type": "string",
+    "description": "Description to be reviewed."
+  },
+  {
+    "dataset": "master/employment.csv",
+    "column_name": "employer_name",
+    "data_type": "string",
+    "description": "Description to be reviewed."
+  },
+  {
+    "dataset": "master/employment.csv",
+    "column_name": "months_in_current_job",
+    "data_type": "string",
+    "description": "Description to be reviewed."
+  },
+  {
+    "dataset": "master/employment.csv",
+    "column_name": "effective_from",
+    "data_type": "string",
+    "description": "Description to be reviewed."
+  },
+  {
+    "dataset": "master/income_records.csv",
+    "column_name": "income_id",
+    "data_type": "string",
+    "description": "Unique identifier for an income record."
+  },
+  {
+    "dataset": "master/income_records.csv",
+    "column_name": "applicant_id",
+    "data_type": "string",
+    "description": "Unique identifier for an applicant."
+  },
+  {
+    "dataset": "master/income_records.csv",
+    "column_name": "monthly_income",
+    "data_type": "string",
+    "description": "Recorded monthly income in the dataset's currency."
+  },
+  {
+    "dataset": "master/income_records.csv",
+    "column_name": "income_source",
+    "data_type": "string",
+    "description": "Description to be reviewed."
+  },
+  {
+    "dataset": "master/income_records.csv",
+    "column_name": "verified",
+    "data_type": "string",
+    "description": "Description to be reviewed."
+  },
+  {
+    "dataset": "master/income_records.csv",
+    "column_name": "recorded_date",
+    "data_type": "string",
+    "description": "Description to be reviewed."
+  },
+  {
+    "dataset": "master/loan_products.csv",
+    "column_name": "product_id",
+    "data_type": "string",
+    "description": "Unique identifier for a loan product."
+  },
+  {
+    "dataset": "master/loan_products.csv",
+    "column_name": "product_name",
+    "data_type": "string",
+    "description": "Description to be reviewed."
+  },
+  {
+    "dataset": "master/loan_products.csv",
+    "column_name": "min_principal",
+    "data_type": "string",
+    "description": "Description to be reviewed."
+  },
+  {
+    "dataset": "master/loan_products.csv",
+    "column_name": "max_principal",
+    "data_type": "string",
+    "description": "Description to be reviewed."
+  },
+  {
+    "dataset": "master/loan_products.csv",
+    "column_name": "annual_interest_rate",
+    "data_type": "string",
+    "description": "Annual interest rate expressed as a percentage."
+  },
+  {
+    "dataset": "master/loan_products.csv",
+    "column_name": "min_term_months",
+    "data_type": "string",
+    "description": "Description to be reviewed."
+  },
+  {
+    "dataset": "master/loan_products.csv",
+    "column_name": "max_term_months",
+    "data_type": "string",
+    "description": "Description to be reviewed."
+  },
+  {
+    "dataset": "transactions/affordability_checks.csv",
+    "column_name": "affordability_check_id",
+    "data_type": "string",
+    "description": "Unique identifier for an affordability check."
+  },
+  {
+    "dataset": "transactions/affordability_checks.csv",
+    "column_name": "loan_id",
+    "data_type": "string",
+    "description": "Unique identifier for a loan application."
+  },
+  {
+    "dataset": "transactions/affordability_checks.csv",
+    "column_name": "monthly_income",
+    "data_type": "string",
+    "description": "Recorded monthly income in the dataset's currency."
+  },
+  {
+    "dataset": "transactions/affordability_checks.csv",
+    "column_name": "existing_monthly_debt",
+    "data_type": "string",
+    "description": "Description to be reviewed."
+  },
+  {
+    "dataset": "transactions/affordability_checks.csv",
+    "column_name": "proposed_monthly_payment",
+    "data_type": "string",
+    "description": "Description to be reviewed."
+  },
+  {
+    "dataset": "transactions/affordability_checks.csv",
+    "column_name": "total_monthly_debt",
+    "data_type": "string",
+    "description": "Description to be reviewed."
+  },
+  {
+    "dataset": "transactions/affordability_checks.csv",
+    "column_name": "debt_to_income_ratio",
+    "data_type": "string",
+    "description": "Total monthly debt divided by monthly income."
+  },
+  {
+    "dataset": "transactions/affordability_checks.csv",
+    "column_name": "check_status",
+    "data_type": "string",
+    "description": "Description to be reviewed."
+  },
+  {
+    "dataset": "transactions/affordability_checks.csv",
+    "column_name": "calculation_version",
+    "data_type": "string",
+    "description": "Description to be reviewed."
+  },
+  {
+    "dataset": "transactions/decisions.csv",
+    "column_name": "decision_id",
+    "data_type": "string",
+    "description": "Unique identifier for a loan decision."
+  },
+  {
+    "dataset": "transactions/decisions.csv",
+    "column_name": "loan_id",
+    "data_type": "string",
+    "description": "Unique identifier for a loan application."
+  },
+  {
+    "dataset": "transactions/decisions.csv",
+    "column_name": "decision_outcome",
+    "data_type": "string",
+    "description": "Recorded outcome of the decision rules."
+  },
+  {
+    "dataset": "transactions/decisions.csv",
+    "column_name": "decision_reason_codes",
+    "data_type": "string",
+    "description": "Description to be reviewed."
+  },
+  {
+    "dataset": "transactions/decisions.csv",
+    "column_name": "decision_rule_version",
+    "data_type": "string",
+    "description": "Description to be reviewed."
+  },
+  {
+    "dataset": "transactions/decisions.csv",
+    "column_name": "decision_date",
+    "data_type": "string",
+    "description": "Description to be reviewed."
+  },
+  {
+    "dataset": "transactions/event_history.csv",
+    "column_name": "event_id",
+    "data_type": "string",
+    "description": "Unique identifier for an application event."
+  },
+  {
+    "dataset": "transactions/event_history.csv",
+    "column_name": "loan_id",
+    "data_type": "string",
+    "description": "Unique identifier for a loan application."
+  },
+  {
+    "dataset": "transactions/event_history.csv",
+    "column_name": "event_type",
+    "data_type": "string",
+    "description": "Type of event recorded in the workflow."
+  },
+  {
+    "dataset": "transactions/event_history.csv",
+    "column_name": "event_timestamp",
+    "data_type": "string",
+    "description": "Timestamp associated with the event."
+  },
+  {
+    "dataset": "transactions/event_history.csv",
+    "column_name": "event_status",
+    "data_type": "string",
+    "description": "Description to be reviewed."
+  },
+  {
+    "dataset": "transactions/ground_truth.csv",
+    "column_name": "anomaly_id",
+    "data_type": "string",
+    "description": "Unique identifier for an anomaly label."
+  },
+  {
+    "dataset": "transactions/ground_truth.csv",
+    "column_name": "anomaly_type",
+    "data_type": "string",
+    "description": "Category of deliberately injected data issue."
+  },
+  {
+    "dataset": "transactions/ground_truth.csv",
+    "column_name": "target_file",
+    "data_type": "string",
+    "description": "Description to be reviewed."
+  },
+  {
+    "dataset": "transactions/ground_truth.csv",
+    "column_name": "target_id",
+    "data_type": "string",
+    "description": "Description to be reviewed."
+  },
+  {
+    "dataset": "transactions/ground_truth.csv",
+    "column_name": "description",
+    "data_type": "string",
+    "description": "Description to be reviewed."
+  },
+  {
+    "dataset": "transactions/ground_truth.csv",
+    "column_name": "injected",
+    "data_type": "string",
+    "description": "Description to be reviewed."
+  },
+  {
+    "dataset": "transactions/loan_applications.csv",
+    "column_name": "loan_id",
+    "data_type": "string",
+    "description": "Unique identifier for a loan application."
+  },
+  {
+    "dataset": "transactions/loan_applications.csv",
+    "column_name": "applicant_id",
+    "data_type": "string",
+    "description": "Unique identifier for an applicant."
+  },
+  {
+    "dataset": "transactions/loan_applications.csv",
+    "column_name": "product_id",
+    "data_type": "string",
+    "description": "Unique identifier for a loan product."
+  },
+  {
+    "dataset": "transactions/loan_applications.csv",
+    "column_name": "requested_principal",
+    "data_type": "string",
+    "description": "Loan principal requested by the applicant."
+  },
+  {
+    "dataset": "transactions/loan_applications.csv",
+    "column_name": "requested_term_months",
+    "data_type": "string",
+    "description": "Requested loan term in months."
+  },
+  {
+    "dataset": "transactions/loan_applications.csv",
+    "column_name": "application_date",
+    "data_type": "string",
+    "description": "Description to be reviewed."
+  },
+  {
+    "dataset": "transactions/loan_applications.csv",
+    "column_name": "application_status",
+    "data_type": "string",
+    "description": "Description to be reviewed."
+  },
+  {
+    "dataset": "transactions/repayment_schedules.csv",
+    "column_name": "schedule_id",
+    "data_type": "string",
+    "description": "Unique identifier for a repayment installment."
+  },
+  {
+    "dataset": "transactions/repayment_schedules.csv",
+    "column_name": "loan_id",
+    "data_type": "string",
+    "description": "Unique identifier for a loan application."
+  },
+  {
+    "dataset": "transactions/repayment_schedules.csv",
+    "column_name": "installment_number",
+    "data_type": "string",
+    "description": "Sequential installment number."
+  },
+  {
+    "dataset": "transactions/repayment_schedules.csv",
+    "column_name": "payment_amount",
+    "data_type": "string",
+    "description": "Total amount due for an installment."
+  },
+  {
+    "dataset": "transactions/repayment_schedules.csv",
+    "column_name": "principal_component",
+    "data_type": "string",
+    "description": "Principal repaid in an installment."
+  },
+  {
+    "dataset": "transactions/repayment_schedules.csv",
+    "column_name": "interest_component",
+    "data_type": "string",
+    "description": "Interest charged in an installment."
+  },
+  {
+    "dataset": "transactions/repayment_schedules.csv",
+    "column_name": "remaining_balance",
+    "data_type": "string",
+    "description": "Principal balance remaining after an installment."
+  },
+  {
+    "dataset": "anomalies/event_history.csv",
+    "column_name": "event_id",
+    "data_type": "string",
+    "description": "Unique identifier for an application event."
+  },
+  {
+    "dataset": "anomalies/event_history.csv",
+    "column_name": "loan_id",
+    "data_type": "string",
+    "description": "Unique identifier for a loan application."
+  },
+  {
+    "dataset": "anomalies/event_history.csv",
+    "column_name": "event_type",
+    "data_type": "string",
+    "description": "Type of event recorded in the workflow."
+  },
+  {
+    "dataset": "anomalies/event_history.csv",
+    "column_name": "event_timestamp",
+    "data_type": "string",
+    "description": "Timestamp associated with the event."
+  },
+  {
+    "dataset": "anomalies/event_history.csv",
+    "column_name": "event_status",
+    "data_type": "string",
+    "description": "Description to be reviewed."
+  },
+  {
+    "dataset": "anomalies/ground_truth.csv",
+    "column_name": "anomaly_id",
+    "data_type": "string",
+    "description": "Unique identifier for an anomaly label."
+  },
+  {
+    "dataset": "anomalies/ground_truth.csv",
+    "column_name": "anomaly_type",
+    "data_type": "string",
+    "description": "Category of deliberately injected data issue."
+  },
+  {
+    "dataset": "anomalies/ground_truth.csv",
+    "column_name": "target_file",
+    "data_type": "string",
+    "description": "Description to be reviewed."
+  },
+  {
+    "dataset": "anomalies/ground_truth.csv",
+    "column_name": "target_id",
+    "data_type": "string",
+    "description": "Description to be reviewed."
+  },
+  {
+    "dataset": "anomalies/ground_truth.csv",
+    "column_name": "injected",
+    "data_type": "string",
+    "description": "Description to be reviewed."
+  },
+  {
+    "dataset": "anomalies/income_records.csv",
+    "column_name": "income_id",
+    "data_type": "string",
+    "description": "Unique identifier for an income record."
+  },
+  {
+    "dataset": "anomalies/income_records.csv",
+    "column_name": "applicant_id",
+    "data_type": "string",
+    "description": "Unique identifier for an applicant."
+  },
+  {
+    "dataset": "anomalies/income_records.csv",
+    "column_name": "monthly_income",
+    "data_type": "string",
+    "description": "Recorded monthly income in the dataset's currency."
+  },
+  {
+    "dataset": "anomalies/income_records.csv",
+    "column_name": "income_source",
+    "data_type": "string",
+    "description": "Description to be reviewed."
+  },
+  {
+    "dataset": "anomalies/income_records.csv",
+    "column_name": "verified",
+    "data_type": "string",
+    "description": "Description to be reviewed."
+  },
+  {
+    "dataset": "anomalies/income_records.csv",
+    "column_name": "recorded_date",
+    "data_type": "string",
+    "description": "Description to be reviewed."
+  },
+  {
+    "dataset": "anomalies/loan_applications.csv",
+    "column_name": "loan_id",
+    "data_type": "string",
+    "description": "Unique identifier for a loan application."
+  },
+  {
+    "dataset": "anomalies/loan_applications.csv",
+    "column_name": "applicant_id",
+    "data_type": "string",
+    "description": "Unique identifier for an applicant."
+  },
+  {
+    "dataset": "anomalies/loan_applications.csv",
+    "column_name": "product_id",
+    "data_type": "string",
+    "description": "Unique identifier for a loan product."
+  },
+  {
+    "dataset": "anomalies/loan_applications.csv",
+    "column_name": "requested_principal",
+    "data_type": "string",
+    "description": "Loan principal requested by the applicant."
+  },
+  {
+    "dataset": "anomalies/loan_applications.csv",
+    "column_name": "requested_term_months",
+    "data_type": "string",
+    "description": "Requested loan term in months."
+  },
+  {
+    "dataset": "anomalies/loan_applications.csv",
+    "column_name": "application_date",
+    "data_type": "string",
+    "description": "Description to be reviewed."
+  },
+  {
+    "dataset": "anomalies/loan_applications.csv",
+    "column_name": "application_status",
+    "data_type": "string",
+    "description": "Description to be reviewed."
+  },
+  {
+    "dataset": "anomalies/repayment_schedules.csv",
+    "column_name": "schedule_id",
+    "data_type": "string",
+    "description": "Unique identifier for a repayment installment."
+  },
+  {
+    "dataset": "anomalies/repayment_schedules.csv",
+    "column_name": "loan_id",
+    "data_type": "string",
+    "description": "Unique identifier for a loan application."
+  },
+  {
+    "dataset": "anomalies/repayment_schedules.csv",
+    "column_name": "installment_number",
+    "data_type": "string",
+    "description": "Sequential installment number."
+  },
+  {
+    "dataset": "anomalies/repayment_schedules.csv",
+    "column_name": "payment_amount",
+    "data_type": "string",
+    "description": "Total amount due for an installment."
+  },
+  {
+    "dataset": "anomalies/repayment_schedules.csv",
+    "column_name": "principal_component",
+    "data_type": "string",
+    "description": "Principal repaid in an installment."
+  },
+  {
+    "dataset": "anomalies/repayment_schedules.csv",
+    "column_name": "interest_component",
+    "data_type": "string",
+    "description": "Interest charged in an installment."
+  },
+  {
+    "dataset": "anomalies/repayment_schedules.csv",
+    "column_name": "remaining_balance",
+    "data_type": "string",
+    "description": "Principal balance remaining after an installment."
+  }
+]

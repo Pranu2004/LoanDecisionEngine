@@ -1,0 +1,115 @@
+{
+  "project": "Loan Decision Engine",
+  "seed": 20261022,
+  "python_version": "3.14.6",
+  "generated_at_utc": "2026-10-27T13:17:48.241560+00:00",
+  "files": [
+    {
+      "path": "data/master/applicants.csv",
+      "size_bytes": 336146,
+      "sha256": "ad50433d32304d5878dcd87adc8dd2e220e0b466728ee21d44148de44981545c",
+      "data_rows": 10000
+    },
+    {
+      "path": "data/master/credit_facilities.csv",
+      "size_bytes": 426575,
+      "sha256": "6232734f1725609871b4b7f7859239af5d5d99209bbc5d2df2c9f58e51ac7313",
+      "data_rows": 7487
+    },
+    {
+      "path": "data/master/employment.csv",
+      "size_bytes": 693839,
+      "sha256": "d171e8ed3809e364f5930d92954b5c9f4c00111dedc3ebf196e175412218dbe3",
+      "data_rows": 10000
+    },
+    {
+      "path": "data/master/income_records.csv",
+      "size_bytes": 1212873,
+      "sha256": "02e2876ca84fe5a83432b78b3d694879b276af10a3f565b1bea00c3cb55f717b",
+      "data_rows": 20000
+    },
+    {
+      "path": "data/master/loan_products.csv",
+      "size_bytes": 306,
+      "sha256": "09a80d758b2ddcfe9e577af78271ce809706e449e8f0a297f589c1b1519472f0",
+      "data_rows": 4
+    },
+    {
+      "path": "data/transactions/affordability_checks.csv",
+      "size_bytes": 540878,
+      "sha256": "9adb688a5c56c525901dbb009318625b38923eb72978f6f82238c40668670101",
+      "data_rows": 6000
+    },
+    {
+      "path": "data/transactions/decisions.csv",
+      "size_bytes": 561880,
+      "sha256": "1569478d54775689ccbf5e14c44c1326d88df4203069abc28646215b9cad8c60",
+      "data_rows": 6000
+    },
+    {
+      "path": "data/transactions/documents.csv",
+      "size_bytes": 1133582,
+      "sha256": "3882553ac8784dc2f30fd8a84f80a69aed869715e37bebe7628851fb1f92ca64",
+      "data_rows": 17993
+    },
+    {
+      "path": "data/transactions/event_history.csv",
+      "size_bytes": 1734058,
+      "sha256": "6fc98a2dd14459cfee8d0c252d4a08c869085eb3bdfa2808cd081e3be6c13f77",
+      "data_rows": 18000
+    },
+    {
+      "path": "data/transactions/ground_truth.csv",
+      "size_bytes": 802,
+      "sha256": "f1a58c238a67b09d7edf691fb227343a1247576c18d2e567330147f8d9f96a3f",
+      "data_rows": 5
+    },
+    {
+      "path": "data/transactions/loan_applications.csv",
+      "size_bytes": 442725,
+      "sha256": "0476d0fda05fc131d0fa30d1c0aa902321ff8987a8f2baa5ca7d56242801e16b",
+      "data_rows": 6000
+    },
+    {
+      "path": "data/transactions/repayment_schedules.csv",
+      "size_bytes": 12035491,
+      "sha256": "e3fd61b92d3ce2fe513672c75f3b478facb29a79c941d5d1b7f7ba69f5c90c25",
+      "data_rows": 157242
+    },
+    {
+      "path": "data/anomalies/event_history.csv",
+      "size_bytes": 1734246,
+      "sha256": "b409d429bfb0af26f0d8b08e8a8d20303c83450071a02742a6010bb500eb3aee",
+      "data_rows": 18002
+    },
+    {
+      "path": "data/anomalies/ground_truth.csv",
+      "size_bytes": 482,
+      "sha256": "ce20701f8963be8b191a8eec813cdbaae5933e1eaa9d26a4324a6db1e442949d",
+      "data_rows": 5
+    },
+    {
+      "path": "data/anomalies/income_records.csv",
+      "size_bytes": 1212875,
+      "sha256": "7253a1bd0cc2543549fb9641266a50251683158af8c2485d06f0cab04003dc5c",
+      "data_rows": 20000
+    },
+    {
+      "path": "data/anomalies/loan_applications.csv",
+      "size_bytes": 442725,
+      "sha256": "f188179cd4cab8a5b7b4ae799ce052c95a4c70021325b58e7c4ac3c30b7af677",
+      "data_rows": 6000
+    },
+    {
+      "path": "data/anomalies/manifest.json",
+      "size_bytes": 363,
+      "sha256": "a95b9be4918dd534562be56c47c6f6f4a8bbe5727a78ab103ddccb40987c70b0"
+    },
+    {
+      "path": "data/anomalies/repayment_schedules.csv",
+      "size_bytes": 12035491,
+      "sha256": "bb2e58792a36c8598ed2dfe0cff47211efa7837bdf0ca596114ee47054ee754c",
+      "data_rows": 157242
+    }
+  ]
+}

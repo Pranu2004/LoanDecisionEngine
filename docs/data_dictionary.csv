@@ -1,0 +1,100 @@
+dataset,column_name,data_type,description
+master/applicants.csv,applicant_id,string,Unique identifier for an applicant.
+master/applicants.csv,age,string,Description to be reviewed.
+master/applicants.csv,residence_years,string,Description to be reviewed.
+master/applicants.csv,created_date,string,Description to be reviewed.
+master/credit_facilities.csv,credit_facility_id,string,Unique identifier for an existing credit facility.
+master/credit_facilities.csv,applicant_id,string,Unique identifier for an applicant.
+master/credit_facilities.csv,outstanding_balance,string,Description to be reviewed.
+master/credit_facilities.csv,monthly_payment,string,Monthly payment on an existing credit facility.
+master/credit_facilities.csv,status,string,Description to be reviewed.
+master/credit_facilities.csv,effective_from,string,Description to be reviewed.
+master/employment.csv,employment_id,string,Unique identifier for an employment record.
+master/employment.csv,applicant_id,string,Unique identifier for an applicant.
+master/employment.csv,employment_status,string,Description to be reviewed.
+master/employment.csv,employer_name,string,Description to be reviewed.
+master/employment.csv,months_in_current_job,string,Description to be reviewed.
+master/employment.csv,effective_from,string,Description to be reviewed.
+master/income_records.csv,income_id,string,Unique identifier for an income record.
+master/income_records.csv,applicant_id,string,Unique identifier for an applicant.
+master/income_records.csv,monthly_income,string,Recorded monthly income in the dataset's currency.
+master/income_records.csv,income_source,string,Description to be reviewed.
+master/income_records.csv,verified,string,Description to be reviewed.
+master/income_records.csv,recorded_date,string,Description to be reviewed.
+master/loan_products.csv,product_id,string,Unique identifier for a loan product.
+master/loan_products.csv,product_name,string,Description to be reviewed.
+master/loan_products.csv,min_principal,string,Description to be reviewed.
+master/loan_products.csv,max_principal,string,Description to be reviewed.
+master/loan_products.csv,annual_interest_rate,string,Annual interest rate expressed as a percentage.
+master/loan_products.csv,min_term_months,string,Description to be reviewed.
+master/loan_products.csv,max_term_months,string,Description to be reviewed.
+transactions/affordability_checks.csv,affordability_check_id,string,Unique identifier for an affordability check.
+transactions/affordability_checks.csv,loan_id,string,Unique identifier for a loan application.
+transactions/affordability_checks.csv,monthly_income,string,Recorded monthly income in the dataset's currency.
+transactions/affordability_checks.csv,existing_monthly_debt,string,Description to be reviewed.
+transactions/affordability_checks.csv,proposed_monthly_payment,string,Description to be reviewed.
+transactions/affordability_checks.csv,total_monthly_debt,string,Description to be reviewed.
+transactions/affordability_checks.csv,debt_to_income_ratio,string,Total monthly debt divided by monthly income.
+transactions/affordability_checks.csv,check_status,string,Description to be reviewed.
+transactions/affordability_checks.csv,calculation_version,string,Description to be reviewed.
+transactions/decisions.csv,decision_id,string,Unique identifier for a loan decision.
+transactions/decisions.csv,loan_id,string,Unique identifier for a loan application.
+transactions/decisions.csv,decision_outcome,string,Recorded outcome of the decision rules.
+transactions/decisions.csv,decision_reason_codes,string,Description to be reviewed.
+transactions/decisions.csv,decision_rule_version,string,Description to be reviewed.
+transactions/decisions.csv,decision_date,string,Description to be reviewed.
+transactions/event_history.csv,event_id,string,Unique identifier for an application event.
+transactions/event_history.csv,loan_id,string,Unique identifier for a loan application.
+transactions/event_history.csv,event_type,string,Type of event recorded in the workflow.
+transactions/event_history.csv,event_timestamp,string,Timestamp associated with the event.
+transactions/event_history.csv,event_status,string,Description to be reviewed.
+transactions/ground_truth.csv,anomaly_id,string,Unique identifier for an anomaly label.
+transactions/ground_truth.csv,anomaly_type,string,Category of deliberately injected data issue.
+transactions/ground_truth.csv,target_file,string,Description to be reviewed.
+transactions/ground_truth.csv,target_id,string,Description to be reviewed.
+transactions/ground_truth.csv,description,string,Description to be reviewed.
+transactions/ground_truth.csv,injected,string,Description to be reviewed.
+transactions/loan_applications.csv,loan_id,string,Unique identifier for a loan application.
+transactions/loan_applications.csv,applicant_id,string,Unique identifier for an applicant.
+transactions/loan_applications.csv,product_id,string,Unique identifier for a loan product.
+transactions/loan_applications.csv,requested_principal,string,Loan principal requested by the applicant.
+transactions/loan_applications.csv,requested_term_months,string,Requested loan term in months.
+transactions/loan_applications.csv,application_date,string,Description to be reviewed.
+transactions/loan_applications.csv,application_status,string,Description to be reviewed.
+transactions/repayment_schedules.csv,schedule_id,string,Unique identifier for a repayment installment.
+transactions/repayment_schedules.csv,loan_id,string,Unique identifier for a loan application.
+transactions/repayment_schedules.csv,installment_number,string,Sequential installment number.
+transactions/repayment_schedules.csv,payment_amount,string,Total amount due for an installment.
+transactions/repayment_schedules.csv,principal_component,string,Principal repaid in an installment.
+transactions/repayment_schedules.csv,interest_component,string,Interest charged in an installment.
+transactions/repayment_schedules.csv,remaining_balance,string,Principal balance remaining after an installment.
+anomalies/event_history.csv,event_id,string,Unique identifier for an application event.
+anomalies/event_history.csv,loan_id,string,Unique identifier for a loan application.
+anomalies/event_history.csv,event_type,string,Type of event recorded in the workflow.
+anomalies/event_history.csv,event_timestamp,string,Timestamp associated with the event.
+anomalies/event_history.csv,event_status,string,Description to be reviewed.
+anomalies/ground_truth.csv,anomaly_id,string,Unique identifier for an anomaly label.
+anomalies/ground_truth.csv,anomaly_type,string,Category of deliberately injected data issue.
+anomalies/ground_truth.csv,target_file,string,Description to be reviewed.
+anomalies/ground_truth.csv,target_id,string,Description to be reviewed.
+anomalies/ground_truth.csv,injected,string,Description to be reviewed.
+anomalies/income_records.csv,income_id,string,Unique identifier for an income record.
+anomalies/income_records.csv,applicant_id,string,Unique identifier for an applicant.
+anomalies/income_records.csv,monthly_income,string,Recorded monthly income in the dataset's currency.
+anomalies/income_records.csv,income_source,string,Description to be reviewed.
+anomalies/income_records.csv,verified,string,Description to be reviewed.
+anomalies/income_records.csv,recorded_date,string,Description to be reviewed.
+anomalies/loan_applications.csv,loan_id,string,Unique identifier for a loan application.
+anomalies/loan_applications.csv,applicant_id,string,Unique identifier for an applicant.
+anomalies/loan_applications.csv,product_id,string,Unique identifier for a loan product.
+anomalies/loan_applications.csv,requested_principal,string,Loan principal requested by the applicant.
+anomalies/loan_applications.csv,requested_term_months,string,Requested loan term in months.
+anomalies/loan_applications.csv,application_date,string,Description to be reviewed.
+anomalies/loan_applications.csv,application_status,string,Description to be reviewed.
+anomalies/repayment_schedules.csv,schedule_id,string,Unique identifier for a repayment installment.
+anomalies/repayment_schedules.csv,loan_id,string,Unique identifier for a loan application.
+anomalies/repayment_schedules.csv,installment_number,string,Sequential installment number.
+anomalies/repayment_schedules.csv,payment_amount,string,Total amount due for an installment.
+anomalies/repayment_schedules.csv,principal_component,string,Principal repaid in an installment.
+anomalies/repayment_schedules.csv,interest_component,string,Interest charged in an installment.
+anomalies/repayment_schedules.csv,remaining_balance,string,Principal balance remaining after an installment.

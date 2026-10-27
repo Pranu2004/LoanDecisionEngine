@@ -1,0 +1,12 @@
+{
+  "source": "synthetic generated data",
+  "anomaly_count": 5,
+  "anomaly_types": [
+    "TERM_OUTSIDE_PRODUCT_RANGE",
+    "SCHEDULE_RECONCILIATION_MISMATCH",
+    "DECISION_BEFORE_AFFORDABILITY_CHECK",
+    "CONFLICTING_INCOME_RECORDS",
+    "DUPLICATE_APPLICATION_DISBURSEMENT"
+  ],
+  "note": "Original master and transaction files were not modified."
+}

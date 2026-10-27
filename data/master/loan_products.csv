@@ -1,0 +1,5 @@
+product_id,product_name,min_principal,max_principal,annual_interest_rate,min_term_months,max_term_months
+PROD-001,Personal Starter,10000,200000,0.15,6,36
+PROD-002,Personal Plus,25000,500000,0.12,12,60
+PROD-003,Education Support,20000,800000,0.09,12,84
+PROD-004,Small Business,50000,1000000,0.14,12,60
