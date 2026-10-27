@@ -23,3 +23,6 @@ database/*.sqlite3
 # Temporary files
 *.log
 *.tmp
+
+data/anomalies/ground_truth.csv
+data/transactions/ground_truth.csv
