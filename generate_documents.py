@@ -42,21 +42,20 @@ def main():
     ]
 
     rows = []
-    document_number = 1
 
     for application in applications:
         # Generate 2–4 synthetic document records per loan.
         number_of_documents = random.randint(2, 4)
+        loan_id = application["loan_id"]
 
-        for _ in range(number_of_documents):
+        for document_number in range(1, number_of_documents + 1):
             rows.append({
-                "document_id": f"DOC{document_number:07d}",
-                "loan_id": application["loan_id"],
+                "document_id": f"DOC-{loan_id}-{document_number:03d}",
+                "loan_id": loan_id,
                 "document_type": random.choice(DOCUMENT_TYPES),
                 "document_status": random.choice(DOCUMENT_STATUSES),
                 "submitted_at": application["application_date"],
             })
-            document_number += 1
 
     with OUTPUT_FILE.open(
         "w", newline="", encoding="utf-8"

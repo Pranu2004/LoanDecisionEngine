@@ -2,7 +2,7 @@
   "project": "Loan Decision Engine",
   "seed": 20261022,
   "python_version": "3.14.6",
-  "generated_at_utc": "2026-10-27T14:43:00.879706+00:00",
+  "generated_at_utc": "2026-10-29T16:48:39.355294+00:00",
   "files": [
     {
       "path": "data/master/applicants.csv",
@@ -42,14 +42,14 @@
     },
     {
       "path": "data/transactions/decisions.csv",
-      "size_bytes": 563980,
-      "sha256": "57dd86cf99db350840adb9cfe98732f1aa787a917f1a05686fd4670d1ec767fa",
+      "size_bytes": 581980,
+      "sha256": "e375b02651ca7725ebc1ebddc5d32a4fe1b98bb4237510d1a5f83693aeeac3b9",
       "data_rows": 6000
     },
     {
       "path": "data/transactions/documents.csv",
-      "size_bytes": 1133582,
-      "sha256": "3882553ac8784dc2f30fd8a84f80a69aed869715e37bebe7628851fb1f92ca64",
+      "size_bytes": 1385484,
+      "sha256": "7bfab6794d24cae4e674a29044c4cb92d73f9203f7d3666b37397f52a7b396c4",
       "data_rows": 17993
     },
     {
@@ -57,12 +57,6 @@
       "size_bytes": 1734058,
       "sha256": "6fc98a2dd14459cfee8d0c252d4a08c869085eb3bdfa2808cd081e3be6c13f77",
       "data_rows": 18000
-    },
-    {
-      "path": "data/transactions/ground_truth.csv",
-      "size_bytes": 802,
-      "sha256": "f1a58c238a67b09d7edf691fb227343a1247576c18d2e567330147f8d9f96a3f",
-      "data_rows": 5
     },
     {
       "path": "data/transactions/loan_applications.csv",
@@ -81,12 +75,6 @@
       "size_bytes": 1734246,
       "sha256": "b409d429bfb0af26f0d8b08e8a8d20303c83450071a02742a6010bb500eb3aee",
       "data_rows": 18002
-    },
-    {
-      "path": "data/anomalies/ground_truth.csv",
-      "size_bytes": 482,
-      "sha256": "ce20701f8963be8b191a8eec813cdbaae5933e1eaa9d26a4324a6db1e442949d",
-      "data_rows": 5
     },
     {
       "path": "data/anomalies/income_records.csv",

@@ -74,7 +74,7 @@ def generate_decisions():
                 reasons.append("DTI_ABOVE_REVIEW_THRESHOLD")
 
         decisions.append({
-            "decision_id": f"DEC-{loan_id}",
+            "decision_id": f"DEC-{loan_id}-01",
             "loan_id": loan_id,
             "decision_outcome": outcome,
             "decision_reason_codes": "|".join(reasons),

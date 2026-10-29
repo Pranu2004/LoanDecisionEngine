@@ -209,7 +209,7 @@ The anomaly test data contains examples of:
 - Conflicting income records.
 - Duplicate application disbursement events.
 
-The anomaly datasets and `ground_truth.csv` files identify intended test cases. The validation script checks the injected anomaly targets.
+The anomaly datasets support validation of the injected test cases. Ground-truth label files are kept local and excluded from the public repository, manifest, and checksum inventory.
 
 **Evaluation note:** If this repository is used for a challenge or assessment, confirm whether ground-truth labels should be kept separate from the publicly accessible submission before publishing them.
 

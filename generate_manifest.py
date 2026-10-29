@@ -39,8 +39,12 @@ def main():
             if not path.is_file():
                 continue
 
-            # Do not include the manifest or checksum file in its own inventory.
-            if path.name in {"source_manifest.json", "checksums.sha256"}:
+            # Exclude generated metadata and confidential ground-truth labels.
+            if path.name in {
+                "source_manifest.json",
+                "checksums.sha256",
+                "ground_truth.csv",
+            }:
                 continue
 
             entry = {

@@ -1,8 +1,8 @@
-\# Design and Validation
+﻿# Design and Validation
 
 
 
-\## 1. Project Overview
+## 1. Project Overview
 
 
 
@@ -14,27 +14,27 @@ The project is intended for data engineering practice and validation of syntheti
 
 
 
-\## 2. Data Generation and Reproducibility
+## 2. Data Generation and Reproducibility
 
 
 
-\- Random seed: `20261022`
+- Random seed: `20261022`
 
-\- Applicants: 10,000
+- Applicants: 10,000
 
-\- Loan applications: 6,000
+- Loan applications: 6,000
 
-\- Affordability checks: 6,000
+- Affordability checks: 6,000
 
-\- Decisions: 6,000
+- Decisions: 6,000
 
-\- Repayment schedule rows: 157,242
+- Repayment schedule rows: 157,242
 
-\- Document metadata rows: 17,993
+- Document metadata rows: 17,993
 
-\- Event history rows: 18,000
+- Event history rows: 18,000
 
-\- Loan products: 4
+- Loan products: 4
 
 
 
@@ -42,7 +42,7 @@ The generation scripts use a fixed seed to support reproducible synthetic data g
 
 
 
-\## 3. Affordability Calculation
+## 3. Affordability Calculation
 
 
 
@@ -66,7 +66,7 @@ When monthly income is not positive, DTI is unavailable and is recorded as blank
 
 
 
-\## 4. Illustrative Decision Rules
+## 4. Illustrative Decision Rules
 
 
 
@@ -74,15 +74,15 @@ The decision rules are example rules for this synthetic project, not real-world 
 
 
 
-\- Approve when monthly income is positive and DTI is at or below 0.40.
+- Approve when monthly income is positive and DTI is at or below 0.40.
 
-\- Send for review when DTI is above 0.40 and at or below 0.50.
+- Send for review when DTI is above 0.40 and at or below 0.50.
 
-\- Reject when DTI is above 0.50.
+- Reject when DTI is above 0.50.
 
-\- Send for review when income is not positive or DTI is unavailable.
+- Send for review when income is not positive or DTI is unavailable.
 
-\- Send for review when the affordability check or loan product is missing.
+- Send for review when the affordability check or loan product is missing.
 
 
 
@@ -90,7 +90,7 @@ Each decision includes a decision outcome, reason code, rule version, and decisi
 
 
 
-\## 5. Validation Performed
+## 5. Validation Performed
 
 
 
@@ -98,31 +98,31 @@ The following checks passed during the project run:
 
 
 
-\- Master-data identifiers are present and unique.
+- Master-data identifiers are present and unique.
 
-\- Master-data references are valid.
+- Master-data references are valid.
 
-\- Income and credit amounts are non-negative.
+- Income and credit amounts are non-negative.
 
-\- Loan application IDs are unique and applicant/product references are valid.
+- Loan application IDs are unique and applicant/product references are valid.
 
-\- One affordability check is generated per application.
+- One affordability check is generated per application.
 
-\- Generated decision records cover all applications exactly once and use valid outcomes with reason codes.
+- Generated decision records cover all applications exactly once and use valid outcomes with reason codes.
 
-\- Repayment payment amounts are positive and principal, interest, and remaining-balance values satisfy the implemented checks.
+- Repayment payment amounts are positive and principal, interest, and remaining-balance values satisfy the implemented checks.
 
-\- Event IDs are unique, application references are valid, and timestamps are present.
+- Event IDs are unique, application references are valid, and timestamps are present.
 
-\- All five targeted injected anomalies were verified against their expected targets.
+- All five targeted injected anomalies were verified against their expected targets.
 
-\- SQLite foreign-key integrity passed.
+- SQLite foreign-key integrity passed.
 
-\- The SQLite database was populated with the expected table row counts.
+- The SQLite database was populated with the expected table row counts.
 
 
 
-\## 6. Injected Anomalies
+## 6. Injected Anomalies
 
 
 
@@ -146,7 +146,7 @@ The anomaly validation script reported all five injected anomalies as detected a
 
 
 
-\## 7. Current Decision Distribution
+## 7. Current Decision Distribution
 
 
 
@@ -172,14 +172,14 @@ These counts describe the generated synthetic dataset and should not be interpre
 
 
 
-\## 8. Limitations and Next Steps
+## 8. Limitations and Next Steps
 
 
 
-\- The dataset is synthetic and does not represent actual customers or lending outcomes.
+- The dataset is synthetic and does not represent actual customers or lending outcomes.
 
-\- Decision thresholds are illustrative and have not been calibrated against real repayment outcomes or regulatory requirements.
+- Decision thresholds are illustrative and have not been calibrated against real repayment outcomes or regulatory requirements.
 
-\- The project does not establish that the rules are suitable for production credit decisions.
+- The project does not establish that the rules are suitable for production credit decisions.
 
-\- Further work could include stronger cross-file consistency checks, additional edge-case tests, and independent review of the decision rules.
+- Further work could include stronger cross-file consistency checks, additional edge-case tests, and independent review of the decision rules.
